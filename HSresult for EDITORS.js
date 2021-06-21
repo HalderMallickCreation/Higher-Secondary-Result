@@ -82,19 +82,19 @@ function Subject()
 	if (
 		(result>=90)&&(result<=100)
 		)
-			{ alert("😎😎🤠You got star⭐⭐⭐in HS🤠😎😎")
+			{ alert("😎😎🥇You have crossed 90 in HS🥇😎😎")
 			}
 		else {
 			if (
 				(result>=80)&&(result<90)
 				)
-					{ alert("😎😎You got Letter Marks 📧📧📧 in HS😎😎")
+					{ alert("😎😎⚡You got Letter Marks 📧📧📧 in HS⚡️😎😎")
 					}
 				else {
 					if (
 						(result>=75)&&(result<80)
 						)
-							{ alert("😎😊You got star⭐⭐⭐in HS😊😎")
+							{ alert("😎😎😊You got star⭐⭐⭐in HS😊😎😎")
 							}
 						else {
 							if ((result>=25)&&(result<75)){
