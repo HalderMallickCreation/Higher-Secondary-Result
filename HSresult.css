@@ -120,3 +120,7 @@ div{
 .telegramIconEnd{
    background-color:grey;
 }
+p {
+    justify-content: center;
+    text-align: center;
+}
