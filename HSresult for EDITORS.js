@@ -44,7 +44,7 @@ function Subject()
 
 	document.getElementById("mainResult").innerHTML="You got : "+result+" out of 100"+" in H.S. (2021) : "+Subject;
 
-	document.getElementById("recheck").innerHTML="For our recheck purpose : "+" ( "+percentXI+" + "+percentX+" + "+PracFull+" ) = "+recheck+" "+" In case of any error re-enter value properly or go through the QUICK GUIDE 🧐" ;
+	document.getElementById("recheck").innerHTML="For our recheck purpose : "+"You got "+" ( "+TheoRXI+" + "+Prac+" + "+TheoRX+" ) "+" = "+result+" "+" out  of "+" "+" ( "+percentXI+" + "+percentX+" + "+PracFull+" ) = "+recheck+" .  "+" You may have got the right answers 😊 . "+" In case of any error consider re-entering value properly & go through the QUICK GUIDE 😊🧐" ;
 	document.getElementById("share").innerHTML="👨‍👨‍👧‍👦👨‍👨 Consider Sharing To Your Friends & School 👨‍👨‍👧‍👦👨‍👨‍👧";
 	document.getElementById("issue").innerHTML="For Any Issue Please Inform us 😊 ";
 
@@ -71,13 +71,13 @@ function Subject()
 							}
 							if((x4>100)){
 								alert("Your Number in Subject : 4 of Madhyamik must not exceed Total Number (100)")
-							}
-						}
-					}
+							};
+						};
+					};
 				
 
 				
-	console.log(percentX);
+	
 
 	if (
 		(result>=90)&&(result<=100)
@@ -99,10 +99,10 @@ function Subject()
 						else {
 							if ((result>=25)&&(result<75)){
 								alert("😘😘Best wishes for your future😘😘")
-							}
-							else{}
-						}
-				}
-		}
+							};
+							
+						};
+				};
+		};
 
-}
+};
