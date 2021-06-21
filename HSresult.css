@@ -22,7 +22,7 @@ ol li {
   display: flex;
   justify-content:center;
   background-image: url("https://images.pexels.com/photos/311039/pexels-photo-311039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  width: 85%;
+  width: 95%;
   border: 2px solid rgb(36, 2, 63);
   border-radius: 20px;
   padding: 5%;
