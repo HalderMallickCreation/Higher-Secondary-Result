@@ -10,8 +10,35 @@ function Subject()
 	var x3 = document.getElementById("Best3").value ;
 	var x4 = document.getElementById("Best4").value ;
 	  
-
-    // Calculation of Theory ( RELATIVE )//
+		var TheoJ=parseFloat(Theo)/parseFloat(TheoFull);
+		var PracJ=parseFloat(Prac)/parseFloat(PracFull);
+	if (
+		(TheoJ>1)
+		)
+			{ alert("Your Number in Theory must not exceed Total Number in Theory "+" ( "+Theo+" > "+TheoFull+" ) "+" !!!!!")
+			}
+		else {
+			if((PracJ>1)){
+				alert("Your Number in Practical must not exceed Total Number "+" ( " +Prac+" > "+PracFull+" ) "+" !!!!!")
+			}
+			else{
+				if((x1>100)){
+					alert("Your Number in Subject : 1 of Madhyamik must not exceed Total Number (100)")
+				}
+				  else{
+					if((x2>100)){
+						alert("Your Number in Subject : 2 of Madhyamik must not exceed Total Number (100)")
+					}
+					else{
+						if((x3>100)){
+							alert("Your Number in Subject : 3 of Madhyamik must not exceed Total Number (100)")
+						}
+						else{
+							if((x4>100)){
+								alert("Your Number in Subject : 4 of Madhyamik must not exceed Total Number (100)")
+							}
+							else{
+                                      // Calculation of Theory ( RELATIVE )//
     if (
 		(TheoFull>=100)
 		)
@@ -23,16 +50,18 @@ function Subject()
 			  TheoF=Theo;
 		}
       // Theory XI //
-		var percentXI=parseFloat(TheoFullF)*0.60;
-		var TheoRXI=parseFloat(TheoF)*parseFloat(percentXI)/parseFloat(TheoFullF);		
+		var percentXI=(parseFloat(TheoFullF)*0.60).toFixed(0);
+		var TheoRXI=(parseFloat(TheoF)*parseFloat(percentXI)/parseFloat(TheoFullF)).toFixed(1);		
 		
 	// Theory X //	
-	    var percentX=parseFloat(TheoFullF)*0.40;
+	    var percentX=(parseFloat(TheoFullF)*0.40).toFixed(0);
 		var TheoXTotal=parseFloat(x1)+parseFloat(x2)+parseFloat(x3)+parseFloat(x4);
-		var TheoRX=parseFloat(percentX)*parseFloat(TheoXTotal)/400;
+		var TheoRX=(parseFloat(percentX)*parseFloat(TheoXTotal)/400).toFixed(1);
 		
 	//Result//
-	var result=parseFloat(TheoRX)+parseFloat(TheoRXI)+parseFloat(Prac);
+	var result=(parseFloat(TheoRX)+parseFloat(TheoRXI)+parseFloat(Prac)).toFixed(0);
+	//var result=roundOff(parseFloat(resulti), 2);
+	//var result = resulti.toFixed(1);
 	var recheck=parseFloat(percentXI)+parseFloat(percentX)+parseFloat(PracFull);
 
     // Publish//
@@ -45,44 +74,31 @@ function Subject()
 	document.getElementById("mainResult").innerHTML="You got : "+result+" out of 100"+" in H.S. (2021) : "+Subject;
 
 	document.getElementById("recheck").innerHTML="For our recheck purpose : "+"You got "+" ( "+TheoRXI+" + "+Prac+" + "+TheoRX+" ) "+" = "+result+" "+" out  of "+" "+" ( "+percentXI+" + "+percentX+" + "+PracFull+" ) = "+recheck+" .  "+" You may have got the right answers 😊 . "+" In case of any error consider re-entering value properly & go through the QUICK GUIDE 😊🧐" ;
-	document.getElementById("share").innerHTML="👨‍👨‍👧‍👦👨‍👨 Consider Sharing To Your Friends & School 👨‍👨‍👧‍👦👨‍👨‍👧";
+	document.getElementById("share").innerHTML="👨‍👨‍👧‍👦👨‍👨 Consider Sharing To Your Friends & School 👨‍👨‍👧‍👦👨‍👨‍👧"; 
+							}
+						}   
+					}
+				  }
+				
+				
+			};
+		};
+	
+
+
+
+
 	document.getElementById("issue").innerHTML="For Any Issue Please Inform us 😊 ";
 
 
-		
-				if (
-					(TheoF>TheoFullF)
-					)
-						{ alert("Your Number in Theory must not exceed Total Number in Theory (As you selected)")
-						}
-					else {
-						if((Prac>PracFull)){
-							alert("Your Number in Practical must not exceed Total Number in Project/Lab.Practical (As you selected)")
-						}
-						else{
-							if((x1>100)){
-								alert("Your Number in Subject : 1 of Madhyamik must not exceed Total Number (100)")
-							}
-							if((x2>100)){
-								alert("Your Number in Subject : 2 of Madhyamik must not exceed Total Number (100)")
-							}
-							if((x3>100)){
-								alert("Your Number in Subject : 3 of Madhyamik must not exceed Total Number (100)")
-							}
-							if((x4>100)){
-								alert("Your Number in Subject : 4 of Madhyamik must not exceed Total Number (100)")
-							};
-						};
-					};
-				
-
+	
 				
 	
 
 	if (
 		(result>=90)&&(result<=100)
 		)
-			{ alert("😎😎🥇You have crossed 90 in HS🥇😎😎")
+			{ alert("😎😎🥇You have successfully crossed 90 in HS🥇😎😎")
 			}
 		else {
 			if (
