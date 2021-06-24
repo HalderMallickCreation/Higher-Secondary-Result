@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(126, 170, 157); 
+    /*background-color:rgb(126, 170, 157); */
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory.jpg");
     width: 100%;
     position: relative;
@@ -18,11 +18,11 @@ ol li {
   list-style-type: none;
 }
 #div1{
-  background-color: rgb(143, 236, 158);
+  /*background-color: rgb(143, 236, 158);*/
   display: flex;
   justify-content:center;
   background-image: url("https://images.pexels.com/photos/311039/pexels-photo-311039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  width: 95%;
+  width: 85%;
   border: 2px solid rgb(36, 2, 63);
   border-radius: 20px;
   padding: 5%;
@@ -33,7 +33,7 @@ label{
     color: black ;
     font-style: bold;
     background-color: rgb(144, 223, 255);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 input[type=submit] {
   width: 45%;
@@ -44,7 +44,7 @@ input[type=submit] {
   border: 2px solid black;
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input[type=submit]:hover {
@@ -56,7 +56,7 @@ input[type=submit]:hover {
 h2{
     font-size:auto;
     color: black;
-    background-color: #ece142;
+   /* background-color: #ece142;*/
     background-image: url("https://image.freepik.com/free-vector/natural-background-with-bokeh-effect_88138-68.jpg");
     width: 80%;
     justify-content: center;
@@ -100,7 +100,7 @@ input[type=text],[type=number], select {
   border-radius: 4px;
   box-sizing: border-box;
   background-color: rgb(252, 243, 236);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 input[type=text],select{
   justify-content: center;
@@ -115,9 +115,14 @@ div{
 }
 .madhyamik{
   width: 100%;
-  
 }
-p {
-    justify-content: center;
-    text-align: center;
+#mainResult,#fromPracXII,#fromTheoX,#fromTheoXI{
+  background-color: rgb(255, 231, 95);
+  justify-content: center;
+  padding: 0%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 60%;
+}
+#recheck{
+  background-color: rgb(221, 251, 191);
 }
